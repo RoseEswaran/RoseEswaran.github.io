@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> RSVP - Wedding</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+</head>
 </head>
 <body>
     <header>
@@ -17,29 +20,17 @@
             <p>Please RSVP by [RSVP Date] to let us know if you can join us for our wedding celebration.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxq5rAHYqBzcTMBkbwKYCqDZR6lnZ3xvvTvgYUda6q0Wf-Og/viewform?vc=0&c=0&w=1&flr=0">RSVP Here</a>
         </section>
-        <section id="rsvp-form">
-            <h2>RSVP Form</h2>
-            <form id="rsvp-form" method="post" action="process.php">
-                <label for="name">Your Name(s):</label>
-                <input type="text" id="name" name="name" required>
-                <label for="attending">Attending:</label>
-                <br>
-                <input type="radio" id="attending-yes" name="attending" value="yes" required>
-                <label for="attending-yes">Yes</label>
-                <br>
-                <input type="radio" id="attending-no" name="attending" value="no">
-                <label for="attending-no">No</label>
-                <br>
-                <label for="guests">Number of Guests Attending (if applicable):</label>
-                <input type="number" id="guests" name="guests" min="0">
-                <br>
-                <label for="dietary">Dietary Restrictions (optional):</label>
-                <textarea id="dietary" name="dietary" rows="4"></textarea>
-                <br>
-                <button type="submit">Submit RSVP</button>
-            </form>
-        </section>
     </main>
+     <div class="slideshow-container">
+        <div class="slide">
+            <img class="image" src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img class="image" src="image2.jpg" alt="Image 2">
+        </div>
+        </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
     <script src="script.js"></script>
 </body>
 </html>
