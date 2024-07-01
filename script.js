@@ -1,11 +1,26 @@
-const form = document.getElementById('rsvp-form');
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
 
-form.addEventListener('submit', (event) => {
-  const name = document.getElementById('name').value.trim();
-  const attending = document.querySelector('input[name="attending"]:checked');
+// Preload all images for smoother transitions
+const images = document.querySelectorAll('.image');
+images.forEach(image => {
+  const img = new Image();
+  img.src = image.src;
+});
 
-  if (name === '') {
-    alert('Please enter your name(s).');
-    event.preventDefault();
-  } else if (!attending) {
-    alert('Please select whether you will be attending or not
+function showSlides(n) {
+  if (n > slides.length - 1) {
+    currentSlide = 0;
+  } else if (n < 0) {
+    currentSlide = slides.length - 1;
+  }
+
+  slides.forEach(slide => slide.classList.remove("currentSlide"));
+  slides[currentSlide].classList.add("currentSlide");
+}
+
+function plusSlides(n) {
+  showSlides(currentSlide + n);
+}
+
+showSlides(currentSlide); // Start with the first slide
