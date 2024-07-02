@@ -4,6 +4,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#map {
+            height: 400px; /* Adjust height as needed */
+            width: 100%; /* Full width */
+            margin-top: 20px;
+        }
 .slideshow-container {
   max-width: 800px;
   position: relative;

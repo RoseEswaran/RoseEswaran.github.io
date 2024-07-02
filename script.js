@@ -24,3 +24,18 @@ function plusSlides(n) {
 }
 
 showSlides(currentSlide); // Start with the first slide
+
+function initMap() {
+            // The location of the wedding venue (for example)
+            var weddingVenue = { lat: 40.712776, lng: -74.005974 };
+            // The map, centered at wedding venue
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: weddingVenue
+            });
+            // The marker, positioned at wedding venue
+            var marker = new google.maps.Marker({
+                position: weddingVenue,
+                map: map
+            });
+ }
