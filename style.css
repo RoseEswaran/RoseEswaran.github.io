@@ -9,7 +9,9 @@ body {
   text-shadow: 3px 3px 3px #ababab;
 }
 
-
+h1{
+	color:white;
+}
 main {
   padding: 20px;
 }
@@ -20,7 +22,6 @@ section {
 
 p {
   line-height: 1.5;
-  color: white;
 }
 
 label {
