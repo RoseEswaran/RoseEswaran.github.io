@@ -4,21 +4,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
- font-family: "Sofia", sans-serif;
+  font-family: "Sofia", sans-serif;
   font-size: 30px;
   text-shadow: 3px 3px 3px #ababab;
 }
 
-
-header {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-}
-
-h1, h2 {
-  margin: 0;
-}
 
 main {
   padding: 20px;
